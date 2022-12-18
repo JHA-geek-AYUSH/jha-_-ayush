@@ -1,0 +1,806 @@
+/*
+   *********************************************************************JH@ ⌣ @YUSH**************************************************************************************
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@500&display=swap');
+
+
+:root {
+    --green: #27ae60;
+    --gold: #eab411;
+    --ring: #ddad32;
+    --gold2: #ebc658;
+}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    max-width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: .7rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--gold2);
+}
+
+body {
+    background: rgb(0, 0, 0);
+
+}
+
+section {
+    padding: 2rem 9%;
+    min-height: 100vh;
+}
+
+.headingabout {
+    text-align: center;
+    margin-top: 29.9rem;
+    font-size: 4rem;
+    word-spacing: 11.2px;
+    font-stretch: extra-expanded;
+    font-family: 'Noto Serif Telugu', serif;
+    text-transform: uppercase;
+
+}
+
+
+.headingskill {
+    text-align: center;
+    margin-top: 12.75rem;
+    margin-bottom: 5.2rem;
+    font-size: 4rem;
+    letter-spacing: 4.9px;
+    font-stretch: extra-expanded;
+    font-family: 'Noto Serif Telugu', serif;
+    text-transform: uppercase;
+    
+
+}
+
+.heading {
+    text-align: center;
+    margin-top: 29.65rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    letter-spacing: 3.2px;
+    word-spacing: 2px;
+    font-stretch: extra-expanded;
+    font-family: 'Noto Serif Telugu', serif;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3.5rem;
+    padding: .8rem 3rem;
+    background:  linear-gradient(155deg, #421804, #e0cc7b, #e0cc7b, #421804);
+    border-radius: 0.6rem;
+    position: relative;
+    box-shadow: 0.5rem 0.65rem rgba(214, 180, 148, 0.701);
+    color: rgb(43, 27, 7);
+    font-size: 1.7rem;
+    font-weight:900px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(155deg, #421804, #fbd952, #fbd952, #421804);
+    box-shadow: 0.5rem 0.65rem rgba(121, 101, 83, 0.701);
+    letter-spacing: .2rem;
+}
+
+.btn a:visited {
+  color: linear-gradient(155deg, #421804, #e0cc7b, #e0cc7b, #421804);
+  box-shadow: 0.5rem 0.65rem rgba(214, 180, 148, 0.701);
+}
+
+/*header{
+    position: fixed;
+    top: 140px; right: 500px;
+    min-height: 10vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+header .navbar{
+    writing-mode: horizontal-tb;
+    padding:1.5rem;
+}
+
+header .navbar a{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:#eab411;   
+}
+
+header .navbar a:hover{
+    color:#fff;
+}*/
+
+
+
+/*      SOCIAL ICONS     */
+
+
+.icons{
+    display: flex;
+    margin-top: 6.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    z-index: 1;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+li {
+    list-style: none;
+    font-size: 35px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+
+ul li:hover:before {
+    filter: blur(0.2px);
+    transform: scale(0.2);
+ 
+}
+
+ul li:nth-child(1):hover a > .ion{
+    color: #ea0c56;
+    transform: scale(1.05);
+  }
+  ul li:nth-child(2):hover a > .ion{
+    color: #1DA1F2;
+    transform: scale(1.06);
+  }
+  ul li:nth-child(3):hover a > .ion{
+    color: #ffe100;
+    transform: scale(1.06);
+  }
+  
+
+ul li:nth-child(1):before {
+    background: #ea0c56;
+    
+}
+
+ul li:nth-child(2):before {
+    background: #1DA1F2;
+}
+
+ul li:nth-child(3):before {
+    background: #ffe100;
+}
+
+
+ul li:nth-child(1):hover:before {
+    box-shadow: 0 0 15px #ea0c56;
+}
+
+ul li:nth-child(2):hover:before {
+    box-shadow: 0 0 15px #1DA1F2;
+}
+
+ul li:nth-child(3):hover:before {
+    box-shadow: 0 0 15px #ffe100;
+}
+
+ul li:nth-child(1):hover {
+    color: #ea0c56;
+    box-shadow: 0 0 35px #ea0c56;
+    text-shadow: 0 0 35px #ea0c56;
+}
+
+ul li:nth-child(2):hover {
+    color: #1DA1F2;
+    box-shadow: 0 0 35px #1DA1F2;
+    text-shadow: 0 0 35px #1DA1F2;
+}
+
+ul li:nth-child(3):hover {
+    color: #ffe100;
+    box-shadow: 0 0 35px #ffe100;
+    text-shadow: 0 0 35px #ffe100;
+}
+
+/*############################################################  END SOCIAL ICONS  ####################################################################################*/
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home #particles-js {
+    position: absolute;
+    top: 0px;
+    left: 00px;
+    height: 130%;
+    width: 100%;
+    opacity: 85%;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home .content {
+    text-align: match-parent;
+    position: relative;
+    z-index: 1;
+}
+
+.home .content img {
+    height: 27.8rem;
+    width: 27.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border-style:solid;
+    /*border: 1rem solid var(--ring);*/
+    box-shadow: 0px 6.5px 6.5px 1.5px rgb(243, 204, 12), inset 0px 2px 3px #ffffff;
+
+}
+
+
+.home .content h3 {
+    font-family: 'Nabla', cursive;
+    font-size: 5.6rem;
+    line-height: 5.2;
+    padding-top: 54px;
+    margin-top: -80px;
+    text-align: center;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.home .content p {
+    color: #ffd900;
+    font-size: 3.2rem;
+    text-align: center;
+    padding-top: 10px;
+    align-self: center;
+    margin-top: -100px;
+}
+
+
+
+
+
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+.change-h3{
+		 background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%) !important; 
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    padding: 5px !important;
+font-family: 'Playfair Display', serif;
+    position: relative;
+	font-weight: 400px;
+}
+
+
+
+.about .row .image {
+    text-align: center;
+    flex: 1 1 25rem;
+}
+
+.about .row .image img {
+    width: 30rem;
+    border-radius: .5rem;
+    margin-top: 4.6rem;
+    border: 0.65rem solid rgb(70, 71, 59);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(204, 176, 111, 0.838);
+}
+
+.about .row .content {
+    flex: 1 1 55rem;
+}
+
+.about .row .content h3 {
+    color: rgb(255, 255, 255);
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Caveat', cursive;
+}
+
+.about .row .content h3 span {
+    color: var(--gold);
+}
+
+.about .row .content .info {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 1rem;
+    text-align:center;
+    line-height: 2;
+    text-transform: none;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.about .row .content .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.about .row .content .box-container .box {
+    flex: 1 1 20rem;
+}
+
+.about .row .content .box-container .box p {
+    font-size: 1.7rem;
+    color: #222;
+    padding: .5rem 0;
+    line-height: 2;
+}
+
+
+
+
+
+
+.skills .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5rem;
+}
+
+.skills .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    background: rgba(21, 22, 19, 0.581);
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(201, 155, 16, 0.804);
+    padding: 2rem;
+    text-align: center;
+}
+
+.skills .box-container .box i {
+    color: var(--gold);
+    font-size: 5rem;
+    padding: 1rem 0;
+}
+
+.skills .box-container .box h3 {
+    color: rgb(236, 224, 171);
+    text-decoration: underline;
+    text-decoration-color: rgb(119, 114, 93);
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
+    font-size: 2.5rem;
+    font-family: 'Caveat', cursive;
+    padding-top: 1rem;
+}
+
+.skills .box-container .box p {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 5px;
+    line-height: 2;
+}
+
+
+
+
+.projects .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5rem;
+}
+
+.projects .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    background: rgb(0, 0, 0);
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(201, 155, 16, 0.804);
+    padding: 2rem;
+}
+
+
+
+.projects .box-container .box h3 {
+    color: rgb(239, 225, 74);
+    text-decoration: underline;
+    text-decoration-color: #eeac3a;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.projects .box-container .box p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    padding: .5rem 0;
+}
+
+
+
+
+
+.footer {
+    text-align: center;
+    margin: 14.5em 0 0 0;
+    width: 100%;
+    background: linear-gradient(155deg, #421804, #000000, #000000, #421804);
+    justify-content: center;
+    border-top: 3px solid gold;
+    box-sizing: border-box;
+}
+
+
+.outro {
+    box-sizing: border-box;
+    padding: 2em;
+    padding-top: 1em;
+    height: 100%;
+}
+
+
+
+/* media queries  */
+
+/* Media Max Width 991  */
+
+@media (min-width:991px) {
+
+    .headingskill {
+        text-align: center;
+        margin-top: 21.45rem;
+        margin-bottom: 5.2rem;
+        font-size: 4rem;
+        letter-spacing: 4.9px;
+        font-stretch: extra-expanded;
+        font-family: 'Noto Serif Telugu', serif;
+        text-transform: uppercase;
+        
+    }
+
+    .heading {
+        text-align: center;
+        margin-top: 20.15rem;
+        margin-bottom: 5rem;
+        font-size: 4rem;
+        letter-spacing: 3.2px;
+        word-spacing: 2px;
+        font-stretch: extra-expanded;
+        font-family: 'Noto Serif Telugu', serif;
+        text-transform: uppercase;
+        
+    }
+
+    .headingabout {
+        text-align: center;
+        margin-top: 31.9rem;
+        font-size: 4rem;
+        word-spacing: 11.2px;
+        font-stretch: extra-expanded;
+        font-family: 'Noto Serif Telugu', serif;
+        text-transform: uppercase;
+    }
+
+    .about .row .content h3 {
+        color: rgb(255, 255, 255);
+        margin-top: 7.2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 5rem;
+        font-family: 'Caveat', cursive;
+    }
+    
+    .footer{
+        text-align: center;
+        margin: 19.5em 0 0 0;
+        width: 100%;
+        background: linear-gradient(155deg, #391403, #000000, #000000, #391403);
+        justify-content: center;
+        border-top: 3px solid gold;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+
+    }
+
+    body {
+        padding-right: 0;
+
+    }
+
+
+    section {
+        padding: 2rem;
+    }
+
+    header {
+        width: 100%;
+        left: -120%;
+    }
+
+    header.active {
+        left: 0%;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+
+    header .navbar {
+        writing-mode: horizontal-tb;
+    }
+
+    header .navbar a {
+        display: block;
+        font-size: 3rem;
+    }
+
+}
+
+
+
+
+/* Media Max Width 450 */
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 52%;
+        overflow-x: hidden;
+
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
+
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+
+    .home .content img {
+        height: 24.0rem;
+        width: 24.0rem;
+        margin-left: 15px;
+    }
+    
+}
+
+
+@media (max-width: 450px) {
+    #skills {
+        margin-top: 11px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    #projects {
+        margin-top: -80px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    #about .row .content {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .about .row .image {
+        text-align: center;
+        flex: 1 1 25rem;
+    }
+
+    .about .row .image img {
+        width: 30rem;
+        border-radius: .5rem;
+        margin-top: .1rem;
+        border: 0.65rem solid rgb(70, 71, 59);
+        box-shadow: 0.5rem 0.5rem 0.5rem rgba(204, 176, 111, 0.838);
+    }
+}
+
+/*
+@media (min-width:320px) {
+
+    .home #particles-js {
+
+        position: absolute;
+
+        top: -370px;
+
+        left: 00px;
+
+        height: 180%;
+
+        width: 100%;
+
+        opacity: 65%;
+
+    }
+
+}
+
+@media (min-width:481px) {
+
+    .home #particles-js {
+
+        position: absolute;
+
+        top: -370px;
+
+        left: 00px;
+
+        height: 140%;
+
+        width: 100%;
+
+        opacity: 65%;
+
+    }
+
+}
+
+@media (min-width:641px) {
+
+    .home #particles-js {
+
+        position: absolute;
+
+        top: -370px;
+
+        left: 00px;
+
+        height: 140%;
+
+        width: 100%;
+
+        opacity: 65%;
+
+    }
+
+}
+
+@media (min-width:961px) {
+
+    .home #particles-js {
+
+        position: absolute;
+
+        top: -370px;
+
+        left: 00px;
+
+        height: 180%;
+
+        width: 100%;
+
+        opacity: 65%;
+
+    }
+
+}
+
+@media (min-width:1025px) {
+
+    .home #particles-js {
+
+        position: absolute;
+
+        top: -370px;
+
+        left: 00px;
+
+        height: 180%;
+
+        width: 100%;
+
+        opacity: 65%;
+
+    }
+
+}
+
+@media (min-width:1281px) {
+
+    .home #particles-js {
+
+        position: absolute;
+
+        top: -370px;
+
+        left: 00px;
+
+        height: 180%;
+
+        width: 100%;
+
+        opacity: 65%;
+
+    }
+
+}*/
+
+/*
+   *********************************************************************JH@ ⌣ @YUSH**************************************************************************************
+*/
