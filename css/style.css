@@ -16,20 +16,6 @@
     --gold2: #ebc658;
 }
 
-.gradient__text {
-
-    font-family: 'Nabla', cursive;
-
-    font-palette: __paletteOfP;
-
-}
-
-@font-palette-values __paletteOfP {
-
-    base-palette: 1
-
-}
-
 
 * {
     font-family: 'Nunito', sans-serif;
@@ -331,19 +317,24 @@ ul li:nth-child(3):hover {
     override-colors: 6 #FFB978;
 }
 
-.home .content p {
+/* .home .content p {
     color: #ffd900;
-    font-size: 3.2rem;
+  
+} */
+
+.gradient__text {
+    font-family: 'Nabla', cursive;
+    font-palette: __paletteOfP;
+	font-size: 3.2rem;
     text-align: center;
     padding-top: 10px;
     align-self: center;
     margin-top: -100px;
 }
 
-
-
-
-
+@font-palette-values __paletteOfP {
+    base-palette: 1
+}
 
 .about .row {
     display: flex;
