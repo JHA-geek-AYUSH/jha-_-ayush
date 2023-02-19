@@ -307,6 +307,13 @@ ul li:nth-child(3):hover {
     text-align: center;
     align-self: center;
     text-transform: uppercase;
+    color: #1da1f2 !important;
+    font-palette: --myPalette;
+}
+
+@font-palette-values --myPalette {
+    font-family: "Nabla";
+    base-palette: 5;
 }
 
 .home .content p {
