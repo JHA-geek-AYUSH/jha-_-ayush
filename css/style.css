@@ -16,6 +16,20 @@
     --gold2: #ebc658;
 }
 
+.gradient__text {
+
+    font-family: 'Nabla', cursive;
+
+    font-palette: __paletteOfP;
+
+}
+
+@font-palette-values __paletteOfP {
+
+    base-palette: 1
+
+}
+
 
 * {
     font-family: 'Nunito', sans-serif;
