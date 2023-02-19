@@ -354,7 +354,7 @@ font-family: 'Playfair Display', serif;
     border-radius: .5rem;
     margin-top: 4.6rem;
     border: 0.65rem solid rgb(70, 71, 59);
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(204, 176, 111, 0.838);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(204, 176, 111, 0.558);
 }
 
 .about .row .content {
