@@ -332,8 +332,11 @@ ul li:nth-child(3):hover {
 }
 
 .home .content p {
-    color: #ffd900;
-    font-size: 3.2rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+     background-image: linear-gradient(to bottom, #432371, #8b3274, #bf5172, #e47d71, #faae7b);
+    color: transparent;
+    font-size: 3.35rem;
     text-align: center;
     padding-top: 10px;
     align-self: center;
