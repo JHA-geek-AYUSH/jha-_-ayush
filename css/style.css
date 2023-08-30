@@ -187,7 +187,7 @@ header .navbar a:hover{
 ul {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 li {
