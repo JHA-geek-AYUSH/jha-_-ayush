@@ -187,7 +187,7 @@ header .navbar a:hover{
 ul {
     display: flex;
     justify-content: center;
-    gap: 6rem;
+    gap: 5rem;
 }
 
 li {
@@ -200,13 +200,23 @@ li {
     justify-content: center;
     align-items: center;
     line-height: 20px;
+    opacity: 0.2;
+    transition: opacity 250ms ease;
 }
 
-
-ul li:hover:before {
+/* modified here hackerrank-icon*/
+.hackerrank-icon{
+  color: white;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: none;
+  opacity: 0.2;
+  transition: opacity 220ms ease;
+}
+/* modified here hackerrank-icon*/
+ul li:hover:before, .hackerrank-icon:hover:before {
     filter: blur(0.2px);
     transform: scale(0.2);
- 
 }
 
 ul li:nth-child(1):hover a > .ion{
@@ -221,7 +231,7 @@ ul li:nth-child(1):hover a > .ion{
     color: #ffe100;
     transform: scale(1.06);
   }
-  
+
 
 ul li:nth-child(1):before {
     background: #ea0c56;
@@ -235,6 +245,10 @@ ul li:nth-child(2):before {
 ul li:nth-child(3):before {
     background: #ffe100;
 }
+/* modified here hackerrank-icon*/
+ul .hackerrank-icon:before {
+    background: #068932;
+}
 
 
 ul li:nth-child(1):hover:before {
@@ -247,6 +261,10 @@ ul li:nth-child(2):hover:before {
 
 ul li:nth-child(3):hover:before {
     box-shadow: 0 0 15px #ffe100;
+}
+/* modified here hackerrank-icon*/
+ul .hackerrank-icon:hover:before {
+    box-shadow: 0 0 15px #068932;
 }
 
 ul li:nth-child(1):hover {
@@ -265,6 +283,17 @@ ul li:nth-child(3):hover {
     color: #ffe100;
     box-shadow: 0 0 35px #ffe100;
     text-shadow: 0 0 35px #ffe100;
+}
+/* modified here hackerrank-icon*/
+ul .hackerrank-icon:hover {
+    color: #068932;
+    box-shadow: 0 0 35px #068932;
+    text-shadow: 0 0 35px #068932;
+}
+/* modified here hackerrank-icon*/
+ul .hackerrank-icon:hover svg {
+    color: #068932;
+    scale: 1.06;
 }
 
 /*############################################################  END SOCIAL ICONS  ####################################################################################*/
